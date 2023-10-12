@@ -1,0 +1,22 @@
+# Copyright (c) 2023, HyBISCIS Team (Brown University, Boston University)
+# All rights reserved.
+
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree. 
+
+NAME: greit_synth_bead_test
+
+DATASET:
+  PATH: "data/synthetic/data/dataset-small-beads-final"
+  POS_VALUE: 1.0
+  NEG_VALUE: 0.0
+  BATCH_SIZE: 32
+  NUM_MEASUREMENTS: 60
+  NUM_ELECTRODES: 15
+  TRAIN_VAL_TEST_SPLIT: [0.8, 0.1, 0.1]
+  NOISE: False 
+  SHUFFLE: False
+  TRAIN_MIN: None 
+  TRAIN_MAX: None
+  NORMALIZE: False 
+  STANDARDIZE: False 

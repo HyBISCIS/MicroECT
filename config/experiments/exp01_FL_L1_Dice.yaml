@@ -1,0 +1,25 @@
+# Copyright (c) 2023, HyBISCIS Team (Brown University, Boston University)
+# All rights reserved.
+
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree. 
+
+NAME: exp01_FL_L1_Dice
+
+DATASET:
+  PATH: "data/synthetic/data/dataset-small-beads-final"
+  POS_VALUE: 1.0
+  NEG_VALUE: 0.0
+  SMOOTH: True
+  NOISE: True 
+
+MODEL:
+  HEAD_ACTIVATION: Sigmoid
+
+SOLVER: 
+  LOSS: FL+Dice+L1Smooth
+  GAMMA: 2
+  WEIGHTS: [1, 1, 1]
+  LEARNING_RATE: 0.0001
+  EPOCHS: 200
+  OPTIMIZER: adam

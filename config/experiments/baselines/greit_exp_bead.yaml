@@ -1,0 +1,22 @@
+# Copyright (c) 2023, HyBISCIS Team (Brown University, Boston University)
+# All rights reserved.
+
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree. 
+
+NAME: greit_exp_bead_test
+
+DATASET:
+  PATH: "logs/0411022-set0-new-2"
+  POS_VALUE: 1.0
+  NEG_VALUE: 0.0
+  BATCH_SIZE: 1
+  NUM_MEASUREMENTS: 60
+  NUM_ELECTRODES: 15
+  TRAIN_VAL_TEST_SPLIT: [0, 0, 1]
+  NOISE: False 
+  SHUFFLE: False
+  TRAIN_MIN: None    # Don't normalize with the training data stats because GREIT doesn't have any training
+  TRAIN_MAX: None 
+  NORMALIZE: False 
+  STANDARDIZE: False 

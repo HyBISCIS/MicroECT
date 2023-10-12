@@ -1,0 +1,32 @@
+# Copyright (c) 2023, HyBISCIS Team (Brown University, Boston University)
+# All rights reserved.
+
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree. 
+
+NAME: exp01_FL_L1
+
+DATASET:
+  # PATH: "data/logs/07082022_sweep_87/dataset"
+  PATH: "logs/sweep_resized_column2/dataset"
+  # PATH: "data/synthetic/biofilm_train_data"
+  POS_VALUE: 1.0
+  NEG_VALUE: 0.0
+  NUM_MEASUREMENTS: 85
+  SHUFFLE: True 
+  NOISE: False 
+  
+MODEL:
+  TYPE: Residual-Decoder
+  HEAD_ACTIVATION: Sigmoid
+   
+SOLVER: 
+  LOSS: FL+Dice+L1Smooth
+  # LOSS: UnifiedFocalLoss
+  LEARNING_RATE: 0.001
+  EPOCHS: 100
+  OPTIMIZER: adam
+  WEIGHTS: [1, 1, 1] 
+  TRAINABLE_WEIGHTS: True 
+  GAMMA: 8 
+  LR_GAMMA: 0.85

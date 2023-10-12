@@ -1,0 +1,31 @@
+# Copyright (c) 2023, HyBISCIS Team (Brown University, Boston University)
+# All rights reserved.
+
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree. 
+
+NAME: pvpn_exp_bead_test
+
+DATASET:
+  PATH: "logs/0411022-set0-new-2"
+  POS_VALUE: 1.0
+  NEG_VALUE: 0.0
+  NUM_MEASUREMENTS: 60
+  BATCH_SIZE: 1
+  TRAIN_VAL_TEST_SPLIT: [0, 0, 1]
+  NOISE: False 
+  SHUFFLE: False
+  TRAIN_MIN: 1.89992063644765
+  TRAIN_MAX: 4.508421786234626
+  NORMALIZE: False 
+  STANDARDIZE: False 
+
+
+MODEL:
+  HEAD_ACTIVATION: Sigmoid
+
+SOLVER: 
+  LOSS: MSE
+  LEARNING_RATE: 0.0001
+  EPOCHS: 0               # Don't run training 
+  OPTIMIZER: adam
