@@ -36,6 +36,8 @@ from GAN.lr import get_scheduler
 from metrics.metrics import Metrics, tabulate_runs
 
 
+#### Xceptio-pytorhc ####
+# https://github.com/tstandley/Xception-PyTorch/blob/master/xception.py
 class SeparableConv2d(nn.Module):
     def __init__(self,in_channels,out_channels,kernel_size=1,stride=1,padding=0,dilation=1,bias=False):
         super(SeparableConv2d,self).__init__()
@@ -48,7 +50,8 @@ class SeparableConv2d(nn.Module):
         x = self.pointwise(x)
         return x
     
-
+#### Xceptio-pytorhc ####
+# https://github.com/tstandley/Xception-PyTorch/blob/master/xception.py
 class Block(nn.Module):
     def __init__(self, in_filters, out_filters, reps, strides=1, start_with_relu=True, grow_first=True):
         super(Block, self).__init__()
@@ -101,7 +104,8 @@ class Block(nn.Module):
         return x
 
 
-
+#### Xceptio-pytorhc ####
+# https://github.com/tstandley/Xception-PyTorch/blob/master/xception.py
 class Xception(nn.Module):
     """
     Xception optimized for the ImageNet dataset, as specified in
@@ -250,7 +254,8 @@ class Xception(nn.Module):
         return x, h1, h2, h3, h4
 
 
-
+#### Xceptio-pytorhc ####
+# https://github.com/tstandley/Xception-PyTorch/blob/master/xception.py
 class _ASPPModule(nn.Module):
     def __init__(self, inplanes, planes, kernel_size, padding, dilation, BatchNorm):
         super(_ASPPModule, self).__init__()
@@ -336,6 +341,7 @@ class ASPP(nn.Module):
                 m.bias.data.zero_()
 
 
+### PVPN Implementation ### 
 class Decoder(nn.Module):
 
     def __init__(self, D=1):
