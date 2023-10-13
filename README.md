@@ -3,6 +3,8 @@
 Microscale 3-D Capacitence Tomography with a CMOS Sensor Array. 
 
 ## Overview
+![Screenshot](docs/model_arch.png)
+
 
 ## Citation
 
