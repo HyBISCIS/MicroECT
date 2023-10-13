@@ -28,10 +28,10 @@ from data.dataset import Dataset
 from data.plot import draw_grid 
 from utils import init_torch_seeds, save_ckp, load_checkpoint
 from config import combine_cfgs
-from GAN.visualize import draw_curve
-from GAN.train import smooth_predictions
-from GAN.loss import FocalLoss
-from GAN.lr import get_scheduler
+from model.visualize import draw_curve
+from model.train import smooth_predictions
+from model.loss import FocalLoss
+from model.lr import get_scheduler
 
 from metrics.metrics import Metrics, tabulate_runs
 
