@@ -1,0 +1,46 @@
+ 
+# Copyright (c) 2023, HyBISCIS Team (Brown University, Boston University)
+# All rights reserved.
+
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.  
+
+## Confocal Configuration ##
+
+# Pixel Size (x, y, z)
+PIXEL_SIZE_Z: 1.514
+PIXEL_SIZE_XY: 1.824
+
+# Cross sectional image size (microns, microns)
+DSIZE: [100, 200]
+
+# Length of slice along the rows ~ 200microns
+ROW_OFFSET: 111
+
+# Length of slice along the columns 
+COL_OFFSET: 50
+
+# Cropping image to exclude outer pixels
+CROP_X: [80, -47]
+CROP_Y: [143, -111]
+
+# Flip the confocal z-stack
+FLIP_Z: True
+RESIZE_STACK: False  
+
+# Foreground permittivity 
+FOREGROUND_PERM: 0.25 
+BACKGROUND_PERM: 1 
+
+BOXES: 
+  [
+    {COLUMN: 500,  ROW: 500},    #0
+    {COLUMN: 600,  ROW: 1000},   #1
+    {COLUMN: 740,  ROW: 1000},   #2
+    {COLUMN: 210,  ROW: 2350},   #3
+    {COLUMN: 850,  ROW: 2200},   #4
+    {COLUMN: 175,  ROW: 1700},   #5  
+    {COLUMN: 175,  ROW: 1850},   #6
+    {COLUMN: 815,  ROW: 1650},   #7 
+    # {COLUMN: 1000, ROW: 1000},   #8 
+]

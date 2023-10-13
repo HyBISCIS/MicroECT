@@ -1,0 +1,227 @@
+ 
+# Copyright (c) 2023, HyBISCIS Team (Brown University, Boston University)
+# All rights reserved.
+
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.  
+
+## Confocal Configuration ##
+
+# Pixel Size (x, y, z)
+PIXEL_SIZE_Z: 1.514
+PIXEL_SIZE_XY: 0.714
+
+# Cross sectional image size (microns, microns)
+DSIZE: [100, 200]
+
+# Length of slice along the rows ~ 200microns
+ROW_OFFSET: 200
+
+# Length of slice along the columns 
+COL_OFFSET: 50
+
+# Cropping image to exclude outer pixels
+# CROP_X: [235, -475]
+# CROP_Y: [45, -80]
+CROP_X: [0, -1]
+CROP_Y: [0, -1]
+
+# Flip the confocal z-stack
+FLIP_Z: True
+RESIZE_STACK: True  
+ROTATE_Z_STACK_180: True
+
+# Corner Points for the Wrap/Perscpective Transform for the max projection
+# [COLUMN, ROW]
+WRAP_TRANSFORM: True
+POINT_A: [584, 340]
+POINT_B: [675, 7470]
+POINT_C: [4260, 7440]
+POINT_D: [4165, 270]
+
+# Corner Points for fixing the image tilt 
+FIX_TILT: True 
+TILT_POINT_A: [0, 45]
+TILT_POINT_B: [0, 100]
+TILT_POINT_C: [5119, 100]
+TILT_POINT_D: [5119, 0]
+
+# Foreground permittivity 
+FOREGROUND_PERM: 0.25 
+BACKGROUND_PERM: 1.0 
+
+BOXES: [
+    {COLUMN: 0,  ROW: 0},      #0
+    {COLUMN: 1,  ROW: 0},      #0
+    {COLUMN: 2,  ROW: 0},      #0
+    {COLUMN: 3,  ROW: 0},      #0
+    {COLUMN: 4,  ROW: 0},      #0
+    {COLUMN: 5,  ROW: 0},      #0
+    {COLUMN: 6,  ROW: 0},      #0
+    {COLUMN: 7,  ROW: 0},      #0
+    {COLUMN: 8,  ROW: 0},      #0
+    {COLUMN: 9,  ROW: 0},      #0
+    {COLUMN: 10,  ROW: 0},      #0
+    {COLUMN: 11,  ROW: 0},      #0
+    {COLUMN: 12,  ROW: 0},      #0
+    {COLUMN: 13,  ROW: 0},      #0
+    {COLUMN: 14,  ROW: 0},      #0
+    {COLUMN: 15,  ROW: 0},      #0
+    {COLUMN: 16,  ROW: 0},      #0
+    {COLUMN: 17,  ROW: 0},      #0
+    {COLUMN: 18,  ROW: 0},      #0
+    {COLUMN: 19,  ROW: 0},      #0
+    {COLUMN: 21,  ROW: 0},      #0
+    {COLUMN: 22,  ROW: 0},      #0
+    {COLUMN: 23,  ROW: 0},      #0
+    {COLUMN: 24,  ROW: 0},      #0
+    {COLUMN: 25,  ROW: 0},      #0
+    {COLUMN: 26,  ROW: 0},      #0
+    {COLUMN: 27,  ROW: 0},      #0
+    {COLUMN: 28,  ROW: 0},      #0
+    {COLUMN: 29,  ROW: 0},      #0
+    {COLUMN: 30,  ROW: 0},      #0
+    {COLUMN: 31,  ROW: 0},      #0
+    {COLUMN: 32,  ROW: 0},      #0
+    {COLUMN: 33,  ROW: 0},      #0
+    {COLUMN: 34,  ROW: 0},      #0
+    {COLUMN: 35,  ROW: 0},      #0
+    {COLUMN: 36,  ROW: 0},      #0
+    {COLUMN: 37,  ROW: 0},      #0
+    {COLUMN: 38,  ROW: 0},      #0
+    {COLUMN: 39,  ROW: 0},      #0
+    {COLUMN: 40,  ROW: 0},      #0
+    {COLUMN: 41,  ROW: 0},      #0
+    {COLUMN: 42,  ROW: 0},      #0
+    {COLUMN: 43,  ROW: 0},      #0
+    {COLUMN: 44,  ROW: 0},      #0
+    {COLUMN: 45,  ROW: 0},      #0
+    {COLUMN: 46,  ROW: 0},      #0
+    {COLUMN: 47,  ROW: 0},      #0
+    {COLUMN: 48,  ROW: 0},      #0
+    {COLUMN: 49,  ROW: 0},      #0
+    {COLUMN: 50,  ROW: 0},      #0
+    {COLUMN: 51,  ROW: 0},      #0
+    {COLUMN: 52,  ROW: 0},      #0
+    {COLUMN: 53,  ROW: 0},      #0
+    {COLUMN: 54,  ROW: 0},      #0
+    {COLUMN: 55,  ROW: 0},      #0
+    {COLUMN: 56,  ROW: 0},      #0
+    {COLUMN: 57,  ROW: 0},      #0
+    {COLUMN: 58,  ROW: 0},      #0
+    {COLUMN: 59,  ROW: 0},      #0
+    {COLUMN: 60,  ROW: 0},      #0
+    {COLUMN: 61,  ROW: 0},      #0
+    {COLUMN: 62,  ROW: 0},      #0
+    {COLUMN: 63,  ROW: 0},      #0
+    {COLUMN: 64,  ROW: 0},      #0
+    {COLUMN: 65,  ROW: 0},      #0
+    {COLUMN: 66,  ROW: 0},      #0
+    {COLUMN: 67,  ROW: 0},      #0
+    {COLUMN: 68,  ROW: 0},      #0
+    {COLUMN: 69,  ROW: 0},      #0
+    {COLUMN: 70,  ROW: 0},      #0
+
+    {COLUMN: 71,  ROW: 0},      #0
+    {COLUMN: 72,  ROW: 0},      #0
+    {COLUMN: 73,  ROW: 0},      #0
+    {COLUMN: 74,  ROW: 0},      #0
+    {COLUMN: 75,  ROW: 0},      #0
+    {COLUMN: 77,  ROW: 0},      #0
+    {COLUMN: 77,  ROW: 0},      #0
+    {COLUMN: 78,  ROW: 0},      #0
+    {COLUMN: 79,  ROW: 0},      #0
+    {COLUMN: 80,  ROW: 0},      #0
+
+    {COLUMN: 81,  ROW: 0},      #0
+    {COLUMN: 82,  ROW: 0},      #0
+    {COLUMN: 83,  ROW: 0},      #0
+    {COLUMN: 84,  ROW: 0},      #0
+    {COLUMN: 85,  ROW: 0},      #0
+    {COLUMN: 87,  ROW: 0},      #0
+    {COLUMN: 87,  ROW: 0},      #0
+    {COLUMN: 88,  ROW: 0},      #0
+    {COLUMN: 89,  ROW: 0},      #0
+
+    {COLUMN: 90,  ROW: 0},      #0
+
+    {COLUMN: 91,  ROW: 0},      #0
+    {COLUMN: 92,  ROW: 0},      #0
+    {COLUMN: 93,  ROW: 0},      #0
+    {COLUMN: 94,  ROW: 0},      #0
+    {COLUMN: 95,  ROW: 0},      #0
+    {COLUMN: 97,  ROW: 0},      #0
+    {COLUMN: 97,  ROW: 0},      #0
+    {COLUMN: 98,  ROW: 0},      #0
+    {COLUMN: 99,  ROW: 0},      #0
+    {COLUMN: 100,  ROW: 0},      #0
+    {COLUMN: 101,  ROW: 0},      #0
+    {COLUMN: 102,  ROW: 0},      #0
+    {COLUMN: 103,  ROW: 0},      #0
+    {COLUMN: 104,  ROW: 0},      #0
+    {COLUMN: 105,  ROW: 0},      #0
+    {COLUMN: 106,  ROW: 0},      #0
+    {COLUMN: 107,  ROW: 0},      #0
+    {COLUMN: 108,  ROW: 0},      #0
+    {COLUMN: 109,  ROW: 0},      #0
+    {COLUMN: 110,  ROW: 0},      #0
+    {COLUMN: 111,  ROW: 0},      #0
+    {COLUMN: 112,  ROW: 0},      #0
+    {COLUMN: 113,  ROW: 0},      #0
+    {COLUMN: 114,  ROW: 0},      #0
+    {COLUMN: 115,  ROW: 0},      #0
+    {COLUMN: 116,  ROW: 0},      #0
+    {COLUMN: 117,  ROW: 0},      #0
+    {COLUMN: 118,  ROW: 0},      #0
+    {COLUMN: 119,  ROW: 0},      #0
+    {COLUMN: 120,  ROW: 0},      #0
+    {COLUMN: 121,  ROW: 0},      #0
+    {COLUMN: 122,  ROW: 0},      #0
+    {COLUMN: 123,  ROW: 0},      #0
+    {COLUMN: 124,  ROW: 0},      #0
+    {COLUMN: 125,  ROW: 0},      #0
+    {COLUMN: 126,  ROW: 0},      #0
+    {COLUMN: 127,  ROW: 0},      #0
+    {COLUMN: 128,  ROW: 0},      #0
+    {COLUMN: 129,  ROW: 0},      #0
+
+    {COLUMN: 130,  ROW: 0},      #0
+    {COLUMN: 131,  ROW: 0},      #0
+    {COLUMN: 132,  ROW: 0},      #0
+    {COLUMN: 133,  ROW: 0},      #0
+    {COLUMN: 134,  ROW: 0},      #0
+    {COLUMN: 135,  ROW: 0},      #0
+    {COLUMN: 136,  ROW: 0},      #0
+    {COLUMN: 137,  ROW: 0},      #0
+    {COLUMN: 138,  ROW: 0},      #0
+    {COLUMN: 139,  ROW: 0},      #0
+    {COLUMN: 140,  ROW: 0},      #0
+    {COLUMN: 141,  ROW: 0},      #0
+    {COLUMN: 142,  ROW: 0},      #0
+    {COLUMN: 143,  ROW: 0},      #0    {COLUMN: 140,  ROW: 0},      #0
+    {COLUMN: 144,  ROW: 0},      #0    {COLUMN: 140,  ROW: 0},      #0
+    {COLUMN: 145,  ROW: 0},      #0
+    {COLUMN: 146,  ROW: 0},      #0
+    {COLUMN: 147,  ROW: 0},      #0
+    {COLUMN: 148,  ROW: 0},      #0
+    {COLUMN: 149,  ROW: 0},      #0    {COLUMN: 140,  ROW: 0},      #0
+    {COLUMN: 150,  ROW: 0},      #0
+
+    {COLUMN: 255,  ROW: 0},      #0
+
+    # {COLUMN: 50,  ROW: 100},      #0
+    # {COLUMN: 1000,  ROW: 100},    #0
+    # {COLUMN: 2000,  ROW: 100},    #0
+    # {COLUMN: 3500,  ROW: 100},    #0
+    # {COLUMN: 3000,  ROW: 100},    #0
+    # {COLUMN: 2800,  ROW: 100},    #0
+
+    # {COLUMN: 60,  ROW: 2000},   #1
+    # {COLUMN: 74,  ROW: 3000},   #2
+    # {COLUMN: 121,  ROW: 500},   #3
+    # {COLUMN: 185,  ROW: 200},   #4
+    # {COLUMN: 117,  ROW: 300},   #5  
+    # {COLUMN: 117,  ROW: 4000},   #6
+    # {COLUMN: 181,  ROW: 2500},   #7 
+    # {COLUMN: 1000, ROW: 1000},   #8 
+]

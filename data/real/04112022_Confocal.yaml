@@ -1,0 +1,67 @@
+ 
+# Copyright (c) 2023, HyBISCIS Team (Brown University, Boston University)
+# All rights reserved.
+
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.  
+
+
+## Confocal Configuration ##
+
+# Pixel Size (x, y, z)
+PIXEL_SIZE_Z: 1.51
+PIXEL_SIZE_XY: 0.91 
+
+# Cross sectional image size (microns, microns)
+DSIZE: [100, 200]
+
+# Length of slice along the rows ~ 200microns
+ROW_OFFSET: 220
+
+# Length of slice along the columns 
+COL_OFFSET: 50
+
+# Cropping image to exclude outer pixels
+CROP_X: [165, -150]
+CROP_Y: [130, -95]
+
+# Flip the confocal z-stack
+FLIP_Z: False
+RESIZE_STACK: False 
+
+# Foreground permittivity 
+FOREGROUND_PERM: 0.25 
+BACKGROUND_PERM: 1 
+
+BOXES: 
+  [
+    ### Three Boxes
+    {COLUMN: 1310, ROW: 570, GRID_OFFSET: 16},  #0
+    {COLUMN: 1310, ROW: 580, GRID_OFFSET: 16},  #0-10
+    {COLUMN: 1310, ROW: 597, GRID_OFFSET: 16},  #0-20
+    {COLUMN: 1310, ROW: 615, GRID_OFFSET: 16},  #0-40
+
+    # {COLUMN: 1450, ROW: 450, GRID_OFFSET: 17},  #1
+    # {COLUMN: 1625, ROW: 290, GRID_OFFSET: 17},  #2
+  
+    ###
+    # {COLUMN: 2495, ROW: 600,  GRID_OFFSET: 22},  #3
+    # {COLUMN: 274, ROW: 620,   GRID_OFFSET: 4},    #4
+    
+    {COLUMN: 2770, ROW: 1264, GRID_OFFSET: 30}, #5
+    {COLUMN: 2770, ROW: 1281, GRID_OFFSET: 30}, #5-20
+
+    # {COLUMN: 2075, ROW: 260, GRID_OFFSET: 20},  #6
+    # {COLUMN: 328, ROW: 5250, GRID_OFFSET: 20},  #7
+    #########
+
+    # {COLUMN: 1085 , ROW: 1145},
+    # {COLUMN: 830, ROW: 40}, 
+    # {COLUMN: 760, ROW: 40}, 
+    # {COLUMN: 900, ROW: 720},
+    # {COLUMN: 1885, ROW: 700},
+    # {COLUMN: 1930, ROW: 500},
+    # {COLUMN: 2120, ROW: 500},
+    # {COLUMN: 1950, ROW: 920},
+    # {COLUMN: 1535, ROW: 1100},  
+]

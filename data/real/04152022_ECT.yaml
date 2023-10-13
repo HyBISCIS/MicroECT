@@ -1,0 +1,77 @@
+ 
+# Copyright (c) 2023, HyBISCIS Team (Brown University, Boston University)
+# All rights reserved.
+
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.  
+
+ROW_OFFSET: 15
+COL_OFFSET: 10
+
+# Normalization 
+NORM_ROWS: [100, 200]
+
+# Maximum Row Offset
+MAX_ROW_OFFSET: -5
+MIN_ROW_OFFSET: -1
+
+# Fix bottom rows in the ECT image --> this is probably an issue only in the biofilm dataset?
+FIX_ROW_ALIGNMENT: False 
+
+# Data Preprocessing Configuration
+REMOVE_OUTLIERS: True 
+SCALE_SLICE_Y: False 
+NEGATE_IMAGE: False 
+
+SIMULATE: True 
+
+BOXES: 
+  [
+     ## three boxes ##
+     {COLUMN: 15, ROW: 88,  X: 0, Y: 11},    #0
+     {COLUMN: 25, ROW: 118,  X: 10, Y: 11},   #1
+     {COLUMN: 38, ROW: 135,  X: 10, Y: 11},   #2
+
+     {COLUMN: 25, ROW: 173,  X: 10, Y: 11},   #3
+     {COLUMN: 29, ROW: 186,  X: 10, Y: 11},   #4
+
+     {COLUMN: 48, ROW: 199,  X: 10, Y: 11},   #5
+
+     {COLUMN: 19, ROW: 223,  X: 10, Y: 11},   #6
+     {COLUMN: 41, ROW: 240,  X: 10, Y: 11},   #7
+
+     {COLUMN: 20, ROW: 285,  X: 10, Y: 11},   #8
+     {COLUMN: 38, ROW: 280,  X: 10, Y: 11},   #9
+    
+     {COLUMN: 84, ROW: 310,  X: 10, Y: 11},   #10
+
+     {COLUMN: 63, ROW: 340,  X: 10, Y: 11},   #11
+     {COLUMN: 91, ROW: 355,  X: 10, Y: 11},   #12
+     {COLUMN: 65, ROW: 375,  X: 10, Y: 11},   #13
+
+     {COLUMN: 90, ROW: 469,  X: 10, Y: 11},   #14
+
+     {COLUMN: 151, ROW: 135,  X: 10, Y: 11},   #15
+     {COLUMN: 181, ROW: 135,  X: 10, Y: 11},   #16
+
+     {COLUMN: 143, ROW: 190,  X: 10, Y: 11},   #17
+     {COLUMN: 171, ROW: 185,  X: 10, Y: 11},   #18
+     {COLUMN: 212, ROW: 193,  X: 10, Y: 11},   #19
+
+     {COLUMN: 219, ROW: 250,  X: 10, Y: 11},   #20
+     {COLUMN: 202, ROW: 263,  X: 10, Y: 11},   #21
+     {COLUMN: 166, ROW: 296,  X: 10, Y: 11},   #22
+     
+     {COLUMN: 213, ROW: 283,  X: 10, Y: 11},   #23
+     {COLUMN: 229, ROW: 298,  X: 10, Y: 11},   #24
+     
+     {COLUMN: 192, ROW: 315,  X: 10, Y: 11},   #25
+     {COLUMN: 215, ROW: 330,  X: 10, Y: 11},   #26
+     {COLUMN: 233, ROW: 350,  X: 10, Y: 11},   #27
+
+     {COLUMN: 182, ROW: 355,  X: 10, Y: 11},   #28
+
+     {COLUMN: 162, ROW: 388,  X: 10, Y: 11},   #29
+     {COLUMN: 167, ROW: 478,  X: 0, Y: 11},   #30
+
+ ]      

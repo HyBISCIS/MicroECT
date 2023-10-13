@@ -1,0 +1,71 @@
+ 
+# Copyright (c) 2023, HyBISCIS Team (Brown University, Boston University)
+# All rights reserved.
+
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.  
+
+PIXEL_SIZE_Z: 1.522
+PIXEL_SIZE_XY: 0.404
+
+DSIZE: [100, 150]
+
+ROW_OFFSET: 372
+COL_OFFSET: 200
+
+CROP_X: [0, -350]
+CROP_Y: [0, -1]
+
+FLIP_Z: False
+
+FIX_ROW_ALIGNMENT: False 
+
+# Confocal Cross-section grid fix (specify the offset where the chip grid starts)
+DEPTH_OFFSET_CORRECTION: 60 # crops 60 pixels from the cross-section z-dimension
+
+BOXES: 
+  [
+    ################## 
+    {COLUMN: 600, ROW: 2200},    #0 D
+    {COLUMN: 850, ROW: 3000},    #1 D
+    {COLUMN: 1135, ROW: 3400},   #2 D
+ 
+    {COLUMN: 850, ROW: 4310},    #3 D
+    {COLUMN: 965, ROW: 4510},    #4 D
+    {COLUMN: 1445, ROW: 4900},   #5 D
+
+    {COLUMN: 730, ROW: 5530},    #6 D
+    {COLUMN: 1295, ROW: 5930},   #7 D
+
+    {COLUMN: 798, ROW: 7000},    #8 D
+    {COLUMN: 1225, ROW: 6950},   #9 D
+
+    {COLUMN: 2375, ROW: 7540},    #10 D
+    {COLUMN: 1875, ROW: 8400},    #11 D
+
+    {COLUMN: 2545, ROW: 8800},    #12 D
+    {COLUMN: 1925, ROW: 9300},    #13 D
+    {COLUMN: 2592, ROW: 11600},   #14
+
+    {COLUMN: 3952, ROW: 3300},   #15  # D
+    {COLUMN: 4674, ROW: 3300},   #16  # D
+    {COLUMN: 3820, ROW: 4700},   #17  # D
+    {COLUMN: 4473, ROW: 4640},   #18  # D
+    {COLUMN: 5465, ROW: 4750},   #19  # D
+
+    {COLUMN: 5690, ROW: 6200},   #20
+    {COLUMN: 5265, ROW: 6500},   #21
+
+    {COLUMN: 4410, ROW: 7300},   #22
+    {COLUMN: 5483, ROW: 6900},   #23
+    {COLUMN: 5920, ROW: 7300},   #24
+    {COLUMN: 5043, ROW: 7700},   #25
+    {COLUMN: 5620, ROW: 8100},   #26
+    {COLUMN: 6055, ROW: 8610},   #27
+
+    {COLUMN: 4815, ROW: 8800},   #28
+    {COLUMN: 4325, ROW: 9600},   #29
+    {COLUMN: 4470, ROW: 11800},   #30
+
+    ###############
+]

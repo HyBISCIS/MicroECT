@@ -1,0 +1,50 @@
+ 
+# Copyright (c) 2023, HyBISCIS Team (Brown University, Boston University)
+# All rights reserved.
+
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.  
+
+ROW_OFFSET: 15
+COL_OFFSET: 10
+
+# Normalization 
+NORM_ROWS: [100, 200]
+
+# Maximum Row Offset
+MAX_ROW_OFFSET: -5
+MIN_ROW_OFFSET: -1 
+
+# Fix Row Alignement
+FIX_ROW_ALIGNMENT: False 
+
+# Data Preprocessing Configuration
+REMOVE_OUTLIERS: True 
+
+SCALE_SLICE_Y: False 
+NEGATE_IMAGE: False 
+
+SIMULATE: TRUE 
+
+# Boxes
+BOXES: 
+  [
+     ## three boxes ##
+     {COLUMN: 118, ROW: 68,  X:  10, Y: 11},    #0
+     {COLUMN: 118, ROW: 69,  X:  0, Y: 11},    #0-10
+     {COLUMN: 118, ROW: 70,  X: -10, Y: 11},    #0-20
+     {COLUMN: 118, ROW: 72,  X: -30, Y: 11},    #0-40
+
+    #  {COLUMN: 130, ROW: 55,  X: -30, Y: 10},   #1
+    #  {COLUMN: 147, ROW: 43,  X: -5, Y: 10},    #2
+    #  #######
+
+    #  {COLUMN: 225, ROW: 70,  X: 5,  Y: 100},   #3
+    #  {COLUMN: 32,  ROW: 78,  X: 15, Y: 100},   #4
+     
+     {COLUMN: 250, ROW: 133, X: 33, Y: 11},    #5
+     {COLUMN: 250, ROW: 135, X: 13, Y: 11},    #5-20
+
+    #  {COLUMN: 187, ROW: 40,  X: 5, Y: 11},     #6
+    #  {COLUMN: 17,  ROW: 477, X: 0, Y: 11},     #7
+   ]  
