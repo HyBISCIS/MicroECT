@@ -19,10 +19,6 @@ class Generator(nn.Module):
         head_activ = getattr(nn, head_activation)()
         hidden_activ = getattr(nn, hidden_activation)(True)
 
-        # Attention part 
-        # self.pe = PositionalEncoding(d_model=1)
-        # self.multihead_attn = nn.MultiheadAttention(1, 1)
-
         # Decoder 
         self.main = nn.Sequential(
             # input is Z, going into a convolution
@@ -56,9 +52,6 @@ class Generator(nn.Module):
         )
 
     def forward(self, input):
-        # out = self.pe(input)
-        # out, attn_weights = self.multihead_attn(out, out, out)
-        # out = out.reshape(out.shape[0], out.shape[1], out.shape[2], 1)
         return self.main(input) 
 
 
