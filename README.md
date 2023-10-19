@@ -8,6 +8,8 @@ Microscale 3-D Capacitence Tomography with a CMOS Sensor Array.
 
 ## Citation
 
+- Manar Abdelatty, Joseph Incandela, Kangping Hu, Joseph Larkin. Sherief Reda, Jacob K. Rosenstein. Microscale 3-D Capacitance Tomography with a CMOS Sensor Array. IEEE Biomedical Circuits and Systems Conference (BioCAS), 2023.
+
 ```
 @article{abdelatty2023microscale,
   title={Microscale 3-D Capacitence Tomography with a CMOS Sensor Array},
